@@ -25,7 +25,7 @@ void  DotMatrix::clear(){
 
 
 void  DotMatrix::drawPolygon(Polygon& polygon){
-    int row=0, col=0; // 1表示多边形中的点，base从2开始逆时针表示vertex
+    int row=0, col=0;
     for(int i=0;i<polygon.vertexSize;++i){
         auto& elem=polygon.dots[i];
         row=elem.first;
