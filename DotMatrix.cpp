@@ -18,10 +18,7 @@ void DotMatrix::show(){
     return;
 }
 
-void  DotMatrix::clear(){
-    dots=vector<std::vector<int>>(size, std::vector<int>(size, 0));
-    return;
-}
+inline void  DotMatrix::clear(){dots.clear();}
 
 
 void  DotMatrix::drawPolygon(Polygon& polygon){
